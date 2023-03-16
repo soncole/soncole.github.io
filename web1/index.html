@@ -21,6 +21,37 @@
     <meta name="og:description" content="종합 IT 서비스 기업. 헬스케어, 클라우드 기반 인공지능 컨택센터, 매니지드 서비스, 가상화, 네트워크, 서버, 스토리지.">
     <meta name="og:url" content="https://soncole.github.io">
     <meta name="og:image" content="./images/thumbnail.jpg">
+
+    <!-- 기본 폰트 및 초기화 로딩 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!--스타일 초기화(브라우저별로 같은 폰트로 적용시켜주기 위해 초기화 해주는)-->
+    <!-- reset.css나 normalize.css를 CDN 또는 다운로드 받아 link로  -->
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+    <style>
+    /* 웹 폰트 - 구글 웹폰트, 눈누 | 응용 프로그램용 폰트 - 다폰트
+    font - family: "1차폰트명", 2차폰트명, 3차폰트명
+    3차 폰트는 기본 폰트를 적용함
+    기본 폰트: 브라우저에서 기본적으로 제공하는 폰트
+    sans-serif(고딕), serif(명조), cursive(궁서), monospace(가로세로비율1:1폰트), fantasy(심볼기호나 디자인폰트) */
+    * {margin: 0;padding: 0;} 
+    /* 인라인 방지 태그 - input, a, span 
+    margin 테두리 바깥여백(위에서부터 시계방향으로)
+    margin: 10px 20px; <<상/하 10 좌/우 20
+    크기가 400px 박스를 좌/우 가운데로 배치
+    width:400px;    margin:10px auto;
+
+    padding 테두리의 안쪽여백
+    padding 속성설정도 margin과 동일*/
+    body { width: 100%; font-family: 'Nanum Myeongjo', serif;}
+    ul { list-style: none;}
+    a {text-decoration: none;}
+    img {border: none;}
+
+    .box {margin: 10px; margin-top: 30px;}
+    .np {font-family: 'Noto Sans KR', sans-serif;}
+    </style>
 </head>
 <body>
     <h1>인성정보</h1>
