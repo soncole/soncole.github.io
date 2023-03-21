@@ -112,10 +112,51 @@
 
     .box {margin: 10px; margin-top: 30px;}
     .np {font-family: 'Noto Sans KR', sans-serif;}
+    .container { clear:both; width:100%; }
+    .hd { clear:both; width: 100%; }
+    .tnb {clear:both; width:100%; height: 24px; background-color: rebeccapurple;}
+    .tnb_wrap { clear:both; width: 1400px; margin: 0 auto; height: 20px; }
+    .left_tnb { float:left; }
+    .left_tnb li { float:left; line-height: 24px; }
+    .left_tnb li:first-child:after { content: "|"; color:plum; margin-right: 14px; }
+    .left_tnb li { margin-right: 14px; }
+    .left_tnb li a:hover { color: aqua; }
+    .right_tnb { float:right; }
+    .right_tnb li { float:left; line-height: 24px;}
+    .right_tnb li a { margin-left: 14px; }
+    .tnb ul li a { color:plum; font-style: 0.9em; }
+    .gnb {clear:both; width: 100%; height: 100px; background-color: #fff; border-bottom: 1px solid black;}
+
     </style>
 </head>
 <body>
-    <h1>인성정보</h1>
-    <a href="https://soncole.github.io">메인</a>
+    <div class="container">
+        <header class="hd">
+            <nav class="tnb">
+                <div class="tnb_wrap">
+                    <ul class="left_tnb">
+                        <li><a href="">온리원 푸드넷</a></li>
+                        <li><a href="">협력사 포털</a></li>
+                    </ul>
+                    <ul class="right_tnb">
+                        <li><a href="" class="sns1">1</a></li>
+                        <li><a href="" class="sns2">1</a></li>
+                        <li><a href="" class="sns3">1</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="gnb">
+                <div class="gnb_wrap">
+
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+
+        </div>
+        <footer class="tf">
+
+        </footer>
+    </div>
 </body>
 </html>
