@@ -133,12 +133,24 @@
     .logo { display: block; width: 120px; height: 45px; overflow: hidden; position: absolute; top: 0px; left: 0;}
     .logo img { display: block; width: 100%; height: auto; }
 
-    .gnb {position: relative;}
-    .gnb > ul { width: 800px; height: 48px; border: 1px solid black; margin: 0 auto;}
-    .gnb > ul > li { float:left; }
-    
-    .sitemap_btn{ display: block; position: absolute; top: 0px; right: 0px; cursor: pointer; }
-    .sitemap { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: auto; background-color: yellowgreen;
+    .gnb {position: relative; margin-top: 10px; }
+    .gnb > ul { width: 800px; height: 48px; margin: 0 auto; }
+    .gnb > ul > li { float:left; width: 20%; text-align: center; line-height: 50px; }
+    .gnb > ul > li > a { display: block; font-style: 1.3em; color: #333; font-weight: bold; }
+    .gnb > ul > li:hover > a { border-bottom: 2px solid rebeccapurple; color: rebeccapurple; }
+
+    .sub { display: none; padding-top: 20px; width: 1000px; }
+    .sub.item2 { margin-left: -240px; }
+    .sub.item3 { margin-left: -320px; }
+    .sub.item4 { margin-left: -480px; }
+    .sub.item5 { margin-left: -640px; }
+    .gnb > ul > li:hover > .sub { display: block; }
+    .sub > ul > li { float:left; width: 20%; }
+    .sub > ul > li > a { display: block; color: rebeccapurple; fsize: 1.1em; font-weight: 500; }
+    .sub > ul > li:hover > a { color: plum; }
+
+    .sitemap_btn{ display: block; position: absolute; top: 20px; right: 0px; cursor: pointer; width: 20px; height: 20px; overflow: hidden; text-indent: -9999px; background-image: url("./images/gnb_icon_menu.png"); background-size: 20px 40px; background-position: center -20px; }
+    .sitemap { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 999; background-color: yellowgreen;
          display: none;}
     #sitemap_ck:checked ~ .sitemap { display:block; }
     #sitemap_ck { display:none; }
@@ -160,26 +172,23 @@
                     </ul>
                 </div>
             </nav>
-            <nav class="gnb">
-                <div class="gnb_wrap">
-
+            <div class="main">
+                <div class="main_wrap">
+                    <a href="" class="logo">
+                        <img src="./images/headerlogo_pc_kor.png" alt="CJ프레시웨이로고">
+                    </a>
+                    <nav class="gnb">
+                        <ul class="gnb_fr">
+                            <li><a href="">메뉴1</a></li>
+                            <li><a href="">메뉴2</a></li>
+                            <li><a href="">메뉴3</a></li>
+                            <li><a href="">메뉴4</a></li>
+                            <li><a href="">메뉴5</a></li>
+                        </ul>
+                    </nav>
+                    <label for="sitemap_ck" class="sitemap_btn">사이트맵</label>
                 </div>
-                <div class="main">
-                    <div class="main_wrap">
-                        <a href="" class="logo"></a>
-                        <nav class="gnb">
-                            <ul>
-                                <li><a href="">메뉴1</a></li>
-                                <li><a href="">메뉴2</a></li>
-                                <li><a href="">메뉴3</a></li>
-                                <li><a href="">메뉴4</a></li>
-                                <li><a href="">메뉴5</a></li>
-                            </ul>
-                        </nav>
-                        <label for="sitemap_ck" class="sitemap_btn">사이트맵</label>
-                    </div>
-                </div>
-            </nav>
+            </div>
             <input type="checkbox" id="sitemap_ck">
             <div class="sitemap">
                 <div class="sitemap_fr">
