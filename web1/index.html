@@ -126,7 +126,7 @@
     .right_tnb li a { margin-left: 14px;display:block; width:30px; height:30px;
      text-indent:9999px; overflow: hidden; background-image: url("./images/icons.png");margin-top: 10px; background-size:300px 700px; }
     .tnb ul li a { color:plum; font-style: 0.9em; }
-    .gnb {clear:both; width: 100%; height: 100px; background-color: #fff; border-bottom: 1px solid black;}
+    .gnb {clear:both; width: 100%; height: 100px; background-color: #fff; }
     .main { clear:both; width: 100%; height: 120px; background-color: #fff; }
     .main_wrap { width: 1400px; margin: 0 auto; position: relative;}
     
@@ -146,7 +146,7 @@
     .sub.item5 { margin-left: -640px; }
     .gnb > ul > li:hover > .sub { display: block; }
     .sub > ul > li { float:left; width: 20%; }
-    .sub > ul > li > a { display: block; color: rebeccapurple; fsize: 1.1em; font-weight: 500; }
+    .sub > ul > li > a { display: block; color: rebeccapurple; font-size: 1.1em; font-weight: 500; }
     .sub > ul > li:hover > a { color: plum; }
 
     .sitemap_btn{ display: block; position: absolute; top: 20px; right: 0px; cursor: pointer; width: 20px; height: 20px; overflow: hidden; text-indent: -9999px; background-image: url("./images/gnb_icon_menu.png"); background-size: 20px 40px; background-position: center -20px; }
@@ -154,6 +154,8 @@
          display: none;}
     #sitemap_ck:checked ~ .sitemap { display:block; }
     #sitemap_ck { display:none; }
+    .vs { clear: both; position: relative; width: 100vw; height: calc(100vh - 135px); overflow: hidden;}
+    .vs video { display: block; width: 100%;  }
     </style>
 </head>
 <body>
@@ -162,8 +164,8 @@
             <nav class="tnb">
                 <div class="tnb_wrap">
                     <ul class="left_tnb">
-                        <li><a href="">온리원 푸드넷</a></li>
-                        <li><a href="">협력사 포털</a></li>
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
                     </ul>
                     <ul class="right_tnb">
                         <li><a href="" class="sns1">1</a></li>
@@ -175,15 +177,55 @@
             <div class="main">
                 <div class="main_wrap">
                     <a href="" class="logo">
-                        <img src="./images/headerlogo_pc_kor.png" alt="CJ프레시웨이로고">
+                        <img src="./images/headerlogo_pc_kor.png" alt="인성정보로고">
                     </a>
                     <nav class="gnb">
                         <ul class="gnb_fr">
-                            <li><a href="">메뉴1</a></li>
-                            <li><a href="">메뉴2</a></li>
-                            <li><a href="">메뉴3</a></li>
-                            <li><a href="">메뉴4</a></li>
-                            <li><a href="">메뉴5</a></li>
+                            <li><a href="">기업소개</a>
+                                <div class="sub item1">
+                                    <ul class="dp2">
+                                        <li><a href="">기업소개</a></li>
+                                        <li><a href="">사업분야</a></li>
+                                        <li><a href="">고객지원</a></li>
+                                        <li><a href="">NEWS</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">사업분야</a>
+                                <div class="sub item2">
+                                    <ul class="dp2">
+                                        <li><a href="">IT 매니지드 서비스</a></li>
+                                        <li><a href="">SD-WAN 서비스</a></li>
+                                        <li><a href="">하이브리드 업무환경</a></li>
+                                        <li><a href="">클라우드 컨택센터</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">고객지원</a>
+                                <div class="sub item3">
+                                    <ul class="dp2">
+                                        <li><a href="">온라인 기술지원</a></li>
+                                        <li><a href="">Contact Us</a></li>
+                                        <li><a href="">개인정보처리방침</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">NEWS</a>
+                                <div class="sub item4">
+                                    <ul class="dp2">
+                                        <li><a href="">인성소식</a></li>
+                                        <li><a href="">보도자료</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">인재채용</a>
+                                <div class="sub item5">
+                                    <ul class="dp2">
+                                        <li><a href="">인사제도</a></li>
+                                        <li><a href="">온라인지원</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                     <label for="sitemap_ck" class="sitemap_btn">사이트맵</label>
@@ -198,9 +240,13 @@
             </div>
         </header>
         <div class="content">
-
+            <figure class="vs">
+                <div class="img_box">
+                    <video src="./movie/main.mp4" muted autoplay loop></video>
+                </div>
+            </figure>
         </div>
-        <footer class="tf">
+        <footer class="ft">
 
         </footer>
     </div>
