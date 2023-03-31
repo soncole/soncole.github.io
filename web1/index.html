@@ -105,7 +105,7 @@
        visible : 흘러 넘쳐도 그대로 보여짐
        */
 
-    body { width: 100%; font-family: 'Nanum Myeongjo', serif;}
+    body, html { width: 100%; font-family: 'Nanum Myeongjo', serif; overflow-x: hidden; }
     ul { list-style: none;}
     a {text-decoration: none;}
     img {border: none;}
@@ -155,7 +155,17 @@
     #sitemap_ck:checked ~ .sitemap { display:block; }
     #sitemap_ck { display:none; }
     .vs { clear: both; position: relative; width: 100vw; height: calc(100vh - 135px); overflow: hidden;}
-    .vs video { display: block; width: 100%;  }
+    .vs video { display: block; width: 100%; }
+
+    .page { clear:both; position:relative; width: 100vw; height: 100vh; }
+    .page_wrap { clear:both; width: 1400px; margin: 0 auto; }
+    .page_title { text-align:center; font-size: 36px; padding-top: 2.5em; }
+
+    #page1 { background-color: #fff; color:#333; }
+    #page2 { background-color:aquamarine; color:#333; }
+    #page3 { background-color: #fff; color:#333; }
+    #page4 { background-color: aquamarine; color:#333 }
+    #page5 { background-color:grey; color:#eee; }
     </style>
 </head>
 <body>
@@ -245,6 +255,36 @@
                     <video src="./movie/main.mp4" muted autoplay loop></video>
                 </div>
             </figure>
+            <section class="page" id="page1">
+                <h2 class="page_title">SOLUTION</h2>
+                <div class="page_wrap">
+
+                </div>
+            </section>
+            <section class="page" id="page2">
+                <h2 class="page_title">SUSTAINABILITY</h2>
+                <div class="page_wrap">
+
+                </div>
+            </section>
+            <section class="page" id="page3">
+                <h2 class="page_title">INVESTOR RELATIONS</h2>
+                <div class="page_wrap">
+
+                </div>
+            </section>
+            <section class="page" id="page4">
+                <h2 class="page_title">NOW IS</h2>
+                <div class="page_wrap">
+
+                </div>
+            </section>
+            <section class="page" id="page5">
+                <h2 class="page_title">고객상담센터</h2>
+                <div class="page_wrap">
+
+                </div>
+            </section>
         </div>
         <footer class="ft">
 
