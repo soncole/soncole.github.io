@@ -4,168 +4,290 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오 - 인성정보</title>
+    <title>포트폴리오 - CJ프레시웨이</title>
     <!-- 문서 정보 등록 -->
     <!-- 검색엔진최적화(Search Engine Optimization) : SEO -->
-    <meta name="subject" content="인성정보 벤치마킹 사이트">
-    <meta name="keywords" content="인성정보, it, it기업">
-    <meta name="description" content="종합 IT 서비스 기업. 헬스케어, 클라우드 기반 인공지능 컨택센터, 매니지드 서비스, 가상화, 네트워크, 서버, 스토리지.">
-    <meta name="author" content="Mr. Son">
+    <meta name="subject" content="CJ프레시웨이 벤치마킹 사이트">
+    <meta name="keywords" content="CJ프레시웨이, 식품, 식단, 주문제작">
+    <meta name="description" content="CJ프레시웨이는 좋은 식자재를 유통하며, 건강하고 맛있는 식문화를 창출하는 대한민국 최고의 글로벌 식자재 유통 및 푸드서비스 전문 기업입니다.
+    ">
+    <meta name="author" content="mr. kim">
 
-    <!--파비콘(favicon) 설정-->
+    <!-- 파비콘(favicon) 설정 -->
     <link rel="shortcut icon" href="./images/favicon.ico">
 
-    <!--오픈그래프 설정-->
-    <meta name="og:site_name" content="사이트 이름">
-    <meta name="og:title" content="포트폴리오 - 인성정보">
-    <meta name="og:description" content="종합 IT 서비스 기업. 헬스케어, 클라우드 기반 인공지능 컨택센터, 매니지드 서비스, 가상화, 네트워크, 서버, 스토리지.">
-    <meta name="og:url" content="https://soncole.github.io">
-    <meta name="og:image" content="./images/thumbnail.jpg">
-
+    <!-- https://okgunyang.github.io/web1 -->
+    <!-- 오픈그래프 설정 -->
+    <meta name="og:site_name" content="사이트이름">
+    <meta name="og:title" content="포트폴리오 - CJ프레시웨이">
+    <meta name="og:description" content="CJ프레시웨이는 좋은 식자재를 유통하며, 건강하고 맛있는 식문화를 창출하는 대한민국 최고의 글로벌 식자재 유통 및 푸드서비스 전문 기업입니다.">
+    <mata name="og:url" content="https://okgunyang.github.io/web1">
+    <mata name="og:image" content="./images/thumbnail.jpg">  
+          
     <!-- 기본 폰트 및 초기화 로딩 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <!--스타일 초기화(브라우저별로 같은 폰트로 적용시켜주기 위해 초기화 해주는)-->
-    <!-- reset.css나 normalize.css를 CDN 또는 다운로드 받아 link로  -->
-    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- 스타일 초기화 -->
+    <!-- reset.css나 normalize.css를 CDN 또는 다운로드 받아 link로 연결 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <style>
-    /* 웹 폰트 - 구글 웹폰트, 눈누 | 응용 프로그램용 폰트 - 다폰트
-    font - family: "1차폰트명", 2차폰트명, 3차폰트명
+    /* 
+    웹 폰트 : 구글 웹폰트 또는 눈누, 응용 프로그램용 폰트 : 다폰트
+    font-family:"1차폰트명",2차폰트명,3차폰트명;}
     3차 폰트는 기본 폰트를 적용함
-    기본 폰트: 브라우저에서 기본적으로 제공하는 폰트
-    sans-serif(고딕), serif(명조), cursive(궁서), monospace(가로세로비율1:1폰트), fantasy(심볼기호나 디자인폰트) */
-    * {margin: 0;padding: 0;} 
-    /* 인라인 방지 태그 - input, a, span 
-    margin 테두리 바깥여백(위에서부터 시계방향으로)
-    margin: 10px 20px; <<상/하 10 좌/우 20
-    크기가 400px 박스를 좌/우 가운데로 배치
-    width:400px;    margin:10px auto;
-
-    padding 테두리의 안쪽여백
-    padding 속성설정도 margin과 동일*/
-
-
-    /* css 박스 크기 계산 방법
-    box-sizing : content-box | padding-box | border-box
-    설정하지 않은 경우 content-box이며, 그 밖에 border=box를 사용함
-    content-box 크기 : 크기+패딩+보더+마진
-    border-box 크기 : 크기+마진
-    선택자 { width: 200px; height: 300px; padding: 10px; border:20px solid black; box-sizing:border-box; } 
-    위 박스는 적용크기 기준이 content-box(기본설정)
-        실제폭 : 200+20+40 = 260
-        실제높이 : 300+20+40 = 360
-    border-box 기준
-        실제폭 : 200=200
-        실제높이 : 300=300*/
+    기본 폰트 : 브라우저에서 기본적으로 제공하는 폰트
+    sans-serif(고딕), serif(명조), cursive(궁서), monospace(가로세로비율1:1폰트), fantasy(심볼기호나 디자인폰트)
+    */
+    * { margin: 0; padding: 0; }
     
-    /* ##배치 속성
-       ###위치 속성
-       position : static | relative | absolute | fixed
-       = static : 정적, 기본값으로 별도의 position 속성을 지정하지 않아도 static으로 됨
-       = relative : 상대적인 위치로 설정시에 필요하며, 위치 좌표를 부모 기준으로 정할 경우 활용
-       = absolute : 절대적인 위치로 설정시에 필요하며, x좌표 위치와 y좌표 위치를 지정해야 함
-            위치값은 auto또는 px단위와 %단위 등으로 지정함
-            left : 왼쪽 기준으로부터의 우이치
-            right : 오른쪽 기준으로부터의 위치
-            top : 위쪽 기준으로부터의 위치
-            bottom : 아래쪽 기준으로부터의 위치
-            ※ x좌표 위치는 left나 right 중에서 하나만 기술하고, y좌표 위치는 top이나 bottom중에서 하나만 기술해야한다.
-       = fixed : 화면에 고정된 위치를 설정할 때 필요하며, 스크롤시 fixed된 요소는 스크롤 되지 않고, 화면에 고정되어 있음.
-            absolute과 마찬가지로 left/right, top/bottom의 위치를 설정해야 함
-       - static이나 relative일 경우는 margin으로 떨어진 거리를 지정하고, absolute이나 fixed일 경우는 elft/right, top/bottom으로 위치를 설정
-       
-       ### 레이어 속성
-       z-index : position이 absolute이거나 fixed일 경우 여러 콘텐츠 박스를 겹칠 경우 어떤 콘텐츠 박스를 앞에 배치할지 층(레이어)를  설정하는 것으로
-       숫자 정수만으로 지정하며, 숫자 값이 큰 것이 위(앞)에 배치됨.
-       
-       ### 흐름 속성
-       float : left | right | none
-       - position이 static이거나 relative일 경우 활용하는 배치 흐름 속성
-       
-       ### 흐름 해제 속성
-       clear : left | right | both | none
-       = float 설정된 박사의 흐름을 해제시 사용하며, float이 left로 설정되면, clear도 left로 하면 흐름이 해제되며,
-       left나 right 모두 해제시에는 both를 사용하여 흐름을 해제함.
+    body, html { width: 100%; font-family: 'Noto Sans KR', sans-serif; overflow-x:hidden; }    
+    ul { list-style:none; }
+    a { text-decoration: none; }
+    img { border: none; }
 
-       ### 불투명도 속성
-       opacity : 0~1의 정수 또는 실수를 사용하여 지정(0:투명, 1:불투명)
+    .np { font-family: 'Nanum Pen Script', cursive;}
 
-       ### 가시 속성
-       visibility : visible | hidden
-       = visible : 보이기
-       - hidden : 숨기기
-       - display:none과 달리 hidden을 하면, 안보이는 것 뿐이지 그 자리를 차지하고 있음.
-
-       ### 넘침 속성
-       overflow : hidden | scroll | auto | visible
-       hidden : 흘러 넘치는 부분을 숨김
-       scroll : 흘러 넘치든 안 넘치든 무조건 스크롤바로 표시
-       auto : 흘러 넘칠 경우만 스크롤바 표시
-       visible : 흘러 넘쳐도 그대로 보여짐
-       */
-
-    body, html { width: 100%; font-family: 'Nanum Myeongjo', serif; overflow-x: hidden; }
-    ul { list-style: none;}
-    a {text-decoration: none;}
-    img {border: none;}
-
-    .box {margin: 10px; margin-top: 30px;}
-    .np {font-family: 'Noto Sans KR', sans-serif;}
     .container { clear:both; width:100%; }
     .hd { clear:both; width: 100%; }
-    .tnb {clear:both; width:100%; height: 24px; background-color: rebeccapurple;}
-    .tnb_wrap { clear:both; width: 1400px; margin: 0 auto; height: 20px; }
+    .tnb { clear:both; width: 100%; height:35px; background-color:#8dd7ff;}
+    .tnb_wrap { clear:both;  width: 1400px; margin: 0 auto; height:20px; }
     .left_tnb { float:left; }
-    .left_tnb li { float:left; line-height: 24px; }
-    .left_tnb li:first-child:after { content: "|"; color:plum; margin-right: 14px; margin-left: 14px; }
-    .left_tnb li { margin-right: 14px; }
-    .left_tnb li a:hover { color: aqua; }
+    .left_tnb li { float:left; line-height: 35px; }
+    .left_tnb li:first-child::after { content:"|"; color:#fff; margin-right: 14px; }
+    .left_tnb li a { margin-right: 14px; }
+    .left_tnb li a:hover { color:deeppink; }
     .right_tnb { float:right; }
-    .right_tnb li { float:left; line-height: 24px;}
-    .right_tnb li a { margin-left: 14px;display:block; width:30px; height:30px;
-     text-indent:9999px; overflow: hidden; background-image: url("./images/icons.png");margin-top: 10px; background-size:300px 700px; }
-    .tnb ul li a { color:plum; font-style: 0.9em; }
-    .gnb {clear:both; width: 100%; height: 100px; background-color: #fff; }
-    .main { clear:both; width: 100%; height: 120px; background-color: #fff; }
-    .main_wrap { width: 1400px; margin: 0 auto; position: relative;}
+    .right_tnb li { float:left; line-height: 35px; }
+    .right_tnb li a { margin-left: 14px; display:block; width:30px; height:30px;
+     text-indent:9999px; overflow: hidden; 
+     background-image: url("./images/icons.png");
+     margin-top: 10px; background-size:300px 700px; }
+    /* split icon : 하나의 아이콘셋 이미지를 쪼개어 여러 아이콘을 표시 
+        background-image는 같고, background-position으로 조절하여 해당 아이콘이 나타나도록 함
+    */
+    /* 각 각의 아이콘 이미지 적용시
+    .right_tnb li a { background-size:auto; background-position:center center; }
+    .right_tnb li a.ico1 { background-image: url("./images/icon1.png"); }
+    .right_tnb li a.ico2 { background-image: url("./images/icon2.png"); }
+    .right_tnb li a.ico3 { background-image: url("./images/icon3.png"); }
+    */
+    .right_tnb li a.sns1 { background-position:-67px -67px; }
+    .right_tnb li a.sns2 { background-position:-7px -67px; }
+    .right_tnb li a.sns3 { background-position:-36px -67px; }
+    .tnb ul li a { color:#fff; font-size:0.9em; }
     
-    .logo { display: block; width: 120px; height: 45px; overflow: hidden; position: absolute; top: 0px; left: 0; z-index:10;}
-    .logo img { display: block; width: 100%; height: auto; }
+    .main { clear:both; width: 100%; height:75px; background-color: #fff; 
+    border-bottom:1px solid #ecedee; }
+    .main_wrap { width: 1400px; margin: 0 auto; position:relative; }
+    
+    .logo { display:block; width: 120px; height:45px; overflow:hidden;
+        position:absolute; top:10px; left: 0; z-index:10;   }
+    .logo img { display:block; width: 100%; height:auto; }
+    
+    .gnb { position:relative; margin-top: 10px; }
+    .gnb > ul { width:800px;  height:48px;  margin: 0 auto; }
+    .gnb > ul > li { float:left; width: 20%; text-align: center; 
+        line-height: 50px; }
+    .gnb > ul > li > a { display:block; font-size:1.3em; color:#333;
+    font-weight: bold; }
+    .gnb > ul > li:hover > a { border-bottom:2px solid #075d46; 
+        color:#075d46; }
 
-    .gnb {position: relative; margin-top: 10px; }
-    .gnb > ul { width: 800px; height: 48px; margin: 0 auto; }
-    .gnb > ul > li { float:left; width: 20%; text-align: center; line-height: 50px; }
-    .gnb > ul > li > a { display: block; font-style: 1.3em; color: #333; font-weight: bold; }
-    .gnb > ul > li:hover > a { border-bottom: 2px solid rebeccapurple; color: rebeccapurple; }
-
-    .sub { display: none; padding-top: 20px; width: 1000px; }
+    .sub { display:none; padding-top: 20px; width: 1000px; }
     .sub.item2 { margin-left: -240px; }
     .sub.item3 { margin-left: -320px; }
     .sub.item4 { margin-left: -480px; }
     .sub.item5 { margin-left: -640px; }
-    .gnb > ul > li:hover > .sub { display: block; }
+    .gnb > ul > li:hover > .sub { display:block; }
     .sub > ul > li { float:left; width: 20%; }
-    .sub > ul > li > a { display: block; color: rebeccapurple; font-size: 1.1em; font-weight: 500; }
-    .sub > ul > li:hover > a { color: plum; }
+    .sub > ul > li > a { display:block; color:#075d46; font-size:1.1em; 
+    font-weight: 500; }
+    .sub > ul > li:hover > a { color:#41c365; }
 
-    .sitemap_btn{ display: block; position: absolute; top: 20px; right: 0px; cursor: pointer; width: 20px; height: 20px; overflow: hidden; text-indent: -9999px; background-image: url("./images/gnb_icon_menu.png"); background-size: 20px 40px; background-position: center -20px; }
-    .sitemap { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 999; background-color: yellowgreen;
-         display: none;}
-    #sitemap_ck:checked ~ .sitemap { display:block; }
+    .sitemap_btn { display:block; position:absolute; top:20px;  z-index:10;
+         right:0px; cursor:pointer; width: 20px; height: 20px; overflow:hidden;
+        text-indent:-9999px; background-image: url("./images/gnb_icon_menu.png");
+        background-size:20px 40px; background-position:center -20px; }
+    .sitemap { position:fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+         z-index:999; background-color: aquamarine; display:none; }
+    #sitemap_ck:checked ~ .sitemap { display:block; }    
     #sitemap_ck { display:none; }
-    .vs { clear: both; position: relative; width: 100vw; height: calc(100vh - 135px); overflow: hidden;}
-    .vs video { display: block; width: 100%; }
 
-    .page { clear:both; position:relative; width: 100vw; height: 100vh; }
+    .vs { clear:both; position:relative; width: 100vw; height:calc(100vh - 135px);
+    overflow:hidden;  }
+    .vs video { display:block; width: 100%; }
+
+    .page { clear:both; position:relative; width: 100vw; height:100vh; }
     .page_wrap { clear:both; width: 1400px; margin: 0 auto; }
-    .page_title { text-align:center; font-size: 36px; padding-top: 2.5em; }
+    .page_title { text-align: center; font-size:48px; padding-top: 1.5em; }
 
     #page1 { background-color: #fff; color:#333; }
-    #page2 { background-color:aquamarine; color:#333; }
-    #page3 { background-color: #fff; color:#333; }
-    #page4 { background-color: aquamarine; color:#333 }
-    #page5 { background-color:grey; color:#eee; }
+    #page1 .page_wrap { width:1280px; padding-top: 80px; }
+    #page1 .tit_box { float:right; }
+    .sub_title { font-size:28px; color:orange; font-weight: 100; letter-spacing:-2px;}
+    .main_title { font-size:72px; color:#000; font-weight:700; float:left; }
+    #page1 .pg1_btn_box { clear:both;  }
+    #page1 .pg1_btn_box label { display:block; padding:0.8em; float:left; 
+    border:1px solid #e1e1e1; border-radius:36px; margin:0.5rem; color:#999;
+    cursor:pointer;  }
+    #page1 .pg1_btn_box label:hover {  color:#fff; background-color:#37e3b5; }
+    .pg1_ra { display:none; }    
+    #page1 .pg1_ra:checked + label { color:#fff; background-color:#075d46; }
+    .ban_fr { clear:both; width: 1280px; height: 550px; padding-top: 40px; overflow:hidden; }
+    .ban_fr .ban_box { width: 600%; height: 550px; transition-duration:0.6s; }
+    .ban_fr .ban_box li { width: 1280px; float:left; height: 550px; }
+    .ban_fr .ban_box li .pic { display:block; width: 840px; height: 550px; float:left;
+    border-radius:40px;  }
+    .ban_fr .ban_box li .ban_tit_box { float:right; width: 400px; height: 550px; position:relative; 
+        background-color: #f1f1f1; border-radius:40px; }
+    .ban_fr .ban_box li .ban_tit_box .ban_tit1 { font-size:64px; line-height:3; color:#075d46; 
+    margin-left:50px; }
+    .ban_fr .ban_box li .ban_tit_box .ban_tit2 { position:absolute; left:50px; bottom: 120px;
+         font-size:36px; line-height:2; color:#075d46; }
+    .ban_fr .ban_box li .ban_tit_box .ban_com { position:absolute; bottom:50px;
+        left: 50px;  font-size:16px; color:#666; }
+
+    #pg1_ra1:checked ~ .ban_fr .ban_box { margin-left: 0; }
+    #pg1_ra2:checked ~ .ban_fr .ban_box { margin-left:-1280px; }
+    #pg1_ra3:checked ~ .ban_fr .ban_box { margin-left:-2560px; }
+    #pg1_ra4:checked ~ .ban_fr .ban_box { margin-left:-3840px; }
+    #pg1_ra5:checked ~ .ban_fr .ban_box { margin-left:-5120px; }
+    #pg1_ra6:checked ~ .ban_fr .ban_box { margin-left:-6400px; }
+
+    #page2 { background-color: #f1f1f1; color:#222; padding-bottom: 50px;}
+    #page2 .page_wrap { width: 1280px; padding-top:80px; }
+    .grid_fr { clear:both; width: 1280px; }
+    .grid_fr .grid_box { clear:both; width: 1280px; padding-top: 40px; }
+    .grid_box li { width: 410px; margin-right: 25px; float:left; height: 624px; }
+    .grid_box li:last-child { margin-right: 0; }
+    .grid_box li a { display:block; color:#fffffff8; background-position:center center; 
+    background-repeat: no-repeat; border-radius:40px; margin-top: 25px; height: 300px;
+    padding-top:6em;  padding-left: 2em; font-size:30px; box-sizing:border-box; }
+    .grid_box li a.item1 { background-image: url("./images/subTopBg_01.jpg");}
+    .grid_box li a.item2 { background-image: url("./images/subTopBg_05.jpg"); }
+    .grid_box li a.item3 { height:624px; background-image: url("./images/subTopBg_03.jpg");  
+    background-size:auto 100%; }
+    .grid_box li a.item4 { background-image: url("./images/subTopBg_06.jpg"); }
+    .grid_box li a.item5 { background-image: url("./images/subTopBg_04.jpg"); }
+    .grid_box li a .grid_tit { line-height: 1.8; }
+    .grid_box li a.item3 .grid_tit { padding-top:9.2em; line-height: 1.8; }
+    .grid_box li a .grid_com { font-size:16px; }
+
+    #page3 { background-color:aquamarine; color:#fff; }
+    #page3 .page_wrap { width: 1280px; padding-top:80px; }
+    .col_fr { clear:both; width: 1280px; padding-top: 40px; }
+    .col_fr .col_box { clear: both; width: 1280px; }
+    .col_fr .col_box li.left { float:left; width: 844px; height: 458px; 
+    background-color:#fff; color:#000; border-radius:25px; box-sizing: border-box; 
+padding:38px; }
+    .one_line { font-size:28px; line-height: 2; padding-bottom:18px; }    
+    .inv_p { clear:both; }
+    .large_txt { float:left; font-size:70px; padding-right: 40px; }
+    .small_txt { float:left; font-size:18px; padding-top: 14px; line-height: 1.8; }
+    .col_dl { clear:both; padding-top:30px;  }
+    .col_dl dd { width:250px; float:left; margin:20px 0px; font-size:22px; font-weight:100; 
+    line-height: 1.6; }
+    .col_dl dd .d_tit { font-weight: 200; color:#999; }
+    .col_dl dd .d_com { font-weight: 100; }
+    .gtxt { color:#37e3b5; padding-left: 24px; }
+    .ltxt { color:#999; }
+    .dot:after { content:"|"; padding-left: 24px; }
+    .col_fr .col_box li.right { float:right; width: 410px; height: 458px; }
+    .col_fr .col_box li.right a { display:block; background-color: #fff; color:#333; 
+        height: 135px; line-height: 135px;  margin-bottom: 26px; border-radius:25px;   }
+    .col_fr .col_box li.right a span { padding-left: 20px; }
+    .col_fr .col_box li.right a:after { content:""; display:block; width: 28px; height: 35px; 
+    background-image: url("./images/icons.png"); background-repeat: no-repeat; 
+    background-position: -495px -72px; float:right; margin-top:50px; margin-right:20px; }
+    .col_fr .col_box li.right a span:before { content:""; display:block; float:left; 
+    width:79px; height:76px; background-image:url("./images/icons.png"); background-repeat: no-repeat;
+    background-position:0px -682px; margin-top: 30px; margin-left: 20px; } 
+
+    #page4 { background-color: #fff; color:#333; }
+    #page4 .tit_box { clear:both; padding-top:80px; width: 1280px; margin: 0 auto; }
+    .more { display:block; position:absolute; top:60px; right:200px; font-size:68px; font-weight:bold; 
+    width:80px; height:80px; border:1px solid #ccc; text-align: center; color:#999; }
+    .board_fr { clear:both; width: 1280px; margin:0px auto;  padding-top: 40px; }
+    .tb1 { clear:both; display:table; border-collapse: collapse;  }
+    .tb1 tr { display:table-row;  width: 1280px; }
+    .tb1 td { display:table-cell; min-height:50px; padding-top: 20px; padding-bottom: 20px; 
+    border-top:1px solid #ccc; }
+    .tb1 tr:last-child td { border-bottom:1px solid #ccc; }
+    .tb1 td.td1 { vertical-align:top; width:100px; text-align:left; font-size:32px; 
+        color:#075d46; font-weight: 100; }
+    .tb1 td a { display:block; color:#333; transition-duration:0.4s; }
+    .tb1 td a .td_tit { width:1100px; font-size:28px; line-height:1.4; font-weight:200;  padding-right: 36px;
+        white-space: nowrap; overflow:hidden; text-overflow: ellipsis; }
+    .tb1 td a .td_com { width:1100px; font-size:18px; line-height:2.2; font-weight:100; 
+        color:#999;  padding-right: 36px;
+        white-space: nowrap; overflow:hidden; text-overflow: ellipsis; }
+    .tb1 td a:hover { color:#075d46; }
+    .tb1 td a:hover .td_com { color:#075d46;}
+
+
+    #page5 { background-color:#cfd5e3; color:#222; }
+    #page5 .tit_box { clear:both; padding-top: 80px; }
+    .colm_fr { clear:both; }
+    .colm_fr .lst_tit { clear:both; padding-top: 30px; font-size:28px; font-weight:100; 
+        line-height: 2; }
+    .lst1, .lst2 { clear:both; }
+    .lst1 li, .lst2 li { float:left; width: 410px; margin-right: 25px; height: 250px;
+        background-color: #fff;   border-radius:25px; box-sizing:border-box; padding: 28px; 
+    padding-left: 40px; }
+    .lst1 li:last-child, .lst2 li:last-child { margin-right: 0; }
+    .colm_fr ul .item_tit { font-size:32px; line-height: 2.8; color:#075d46; }
+    .colm_fr ul li:before { content:""; display:block; width:60px; height:60px;
+    background-image: url("./images/icons.png"); background-repeat:no-repeat; 
+    background-size:300px auto; }
+    .colm_fr ul li a { display:block; width: 150px; line-height: 30px; padding-left: 18px; 
+        background-color:#075d46; color:#fff; border-radius:20px; }
+    .colm_fr ul li a:after { content:"→"; padding-left:60px;  }    
+    .colm_fr .lst1 .item1:before { background-position: 0px -400px; }
+    .colm_fr .lst1 .item2:before { background-position: -60px -400px; }
+    .colm_fr .lst1 .item3:before { background-position: -120px -400px; }
+    .colm_fr .lst2 .item1:before { background-position: -180px -400px; }
+    .colm_fr .lst2 .item2:before { background-position: -240px -400px; }
+    .colm_fr .lst2 .item3:before { background-position: 0px -460px; }
+
+    #ft { clear:both;  }
+    .ft .row { clear:both; padding-top: 25px; padding-bottom: 25px; min-height:60px; }
+    .ft .row1 { background-color:#075d46;  }
+    .ft .fnb li { float:left; margin-right: 50px; line-height: 60px; }
+    .ft .fnb li a { color:#fff; font-size: 18px; }
+    .ft .fnb li a:hover { color:gold; }
+    .ft #favo { display:block; line-height: 60px; height: 60px; width: 200px; text-align: center;
+    font-size: 18px;  }
+
+    .ft .row2 { background-color: #f1f1f1; height: 224px; }
+    .ft .slogan { font-size: 36px; color:#e0e0e0; }
+    .ft .ft_link_fr dl { float:left; font-size:16px; line-height: 32px; padding-left: 28px; }
+    .ft .ft_link_fr dl a { color:#a0a0a0; }
+    .ft .ft_link_fr dl a:hover { color:#333; }
+
+    .ft .row3 { background-color: #fff; }
+    .ft .ft_logo { width: 125px; height: 45px; background-image: url("./images/headerlogo_pc_kor.png"); 
+    background-size:125px auto; }
+    .ft .copyright { height: 45px; line-height: 45px; font-style: normal; font-weight:100;
+    color:#a0a0a0; }
+
+    .ft_wrap { clear:both; width: 1280px; margin: 0 auto; }
+    .ft_wrap .left { float: left; }
+    .ft_wrap .right { float: right; }
+
+    .fix_area { position:fixed; z-index:9999; bottom:40px; right:40px; }
+    .fix_area .cir_box { display:block; width: 60px; height: 60px; text-align:center; 
+    border-radius:35px; box-sizing: border-box; padding: 6px; font-size:12px; padding-top:15px; 
+    overflow:hidden; box-shadow:1px 1px 6px #333; }
+    .fix_area .counsel { background-color:rgba(255,255,255,0.75); color:#333; }
+    .fix_area .totop { background-color:#075d46; color:#fff; margin-top: 20px; }
+
+    .fix_area { position:fixed; z-index:9999; bottom:40px; right:40px; }
+    .fix_area .cir_box { display:block; width: 60px; height: 60px; text-align:center; 
+    border-radius:35px; box-sizing: border-box; padding: 6px; font-size:12px; padding-top:15px; 
+    overflow:hidden; box-shadow:1px 1px 6px #333; }
+    .fix_area .counsel { background-color:rgba(255,255,255,0.75); color:#333; }
+    .fix_area .totop { background-color:#075d46; color:#fff; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -178,9 +300,9 @@
                         <li><a href="">회원가입</a></li>
                     </ul>
                     <ul class="right_tnb">
-                        <li><a href="" class="sns1">1</a></li>
-                        <li><a href="" class="sns2">1</a></li>
-                        <li><a href="" class="sns3">1</a></li>
+                        <li><a href="" class="sns1">A1</a></li>
+                        <li><a href="" class="sns2">A2</a></li>
+                        <li><a href="" class="sns3">A3</a></li>
                     </ul>
                 </div>
             </nav>
@@ -194,10 +316,10 @@
                             <li><a href="">기업소개</a>
                                 <div class="sub item1">
                                     <ul class="dp2">
-                                        <li><a href="">기업소개</a></li>
-                                        <li><a href="">사업분야</a></li>
-                                        <li><a href="">고객지원</a></li>
-                                        <li><a href="">NEWS</a></li>
+                                        <li><a href="">기업개요</a></li>
+                                        <li><a href="">CEO</a></li>
+                                        <li><a href="">IR</a></li>
+                                        <li><a href="">사업장위치</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -208,23 +330,27 @@
                                         <li><a href="">SD-WAN 서비스</a></li>
                                         <li><a href="">하이브리드 업무환경</a></li>
                                         <li><a href="">클라우드 컨택센터</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="">고객지원</a>
-                                <div class="sub item3">
-                                    <ul class="dp2">
-                                        <li><a href="">온라인 기술지원</a></li>
-                                        <li><a href="">Contact Us</a></li>
-                                        <li><a href="">개인정보처리방침</a></li>
+                                        <li><a href="">데이터센터/클라우드</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li><a href="">NEWS</a>
-                                <div class="sub item4">
+                                <div class="sub item3">
                                     <ul class="dp2">
                                         <li><a href="">인성소식</a></li>
                                         <li><a href="">보도자료</a></li>
+                                        <li><a href="">홍보영상</a></li>
+                                        <li><a href="">공지사항</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">투자정보</a>
+                                <div class="sub item4">
+                                    <ul class="dp2">
+                                        <li><a href="">경영정보</a></li>
+                                        <li><a href="">주가정보</a></li>
+                                        <li><a href="">재무정보</a></li>
+                                        <li><a href="">IR 자료실</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -232,7 +358,9 @@
                                 <div class="sub item5">
                                     <ul class="dp2">
                                         <li><a href="">인사제도</a></li>
+                                        <li><a href="">채용정보</a></li>
                                         <li><a href="">온라인지원</a></li>
+                                        <li><a href="">인재 POOL</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -255,40 +383,384 @@
                     <video src="./movie/main.mp4" muted autoplay loop></video>
                 </div>
             </figure>
+            <!-- section.page#page$*5>h2.page_title{페이지제목$}+div.page_wrap -->
             <section class="page" id="page1">
-                <h2 class="page_title">SOLUTION</h2>
+                <h2 class="page_title" style="display:none;">SOLUTION</h2>
                 <div class="page_wrap">
-
+                    <div class="tit_box">
+                        <h3 class="sub_title">BUSINESS</h3>
+                        <h2 class="main_title">SOLUTION</h2>
+                    </div>
+                    <article class="pg1_btn_box">
+                        <!-- (input[type=radio][name=pg_ra]#pg1_ra$.pg1_ra+label[for=pg1_ra$].item$)*6 -->
+                        <input type="radio" name="pg_ra" id="pg1_ra1" class="pg1_ra" checked>
+                        <label for="pg1_ra1" class="item1">인성정보</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra2" class="pg1_ra">
+                        <label for="pg1_ra2" class="item2">IT 매니지드 서비스</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra3" class="pg1_ra">
+                        <label for="pg1_ra3" class="item3">SD-WAN 서비스</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra4" class="pg1_ra">
+                        <label for="pg1_ra4" class="item4">하이브리드 업무환경</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra5" class="pg1_ra">
+                        <label for="pg1_ra5" class="item5">데이터센터/클라우드</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra6" class="pg1_ra">
+                        <label for="pg1_ra6" class="item6">네트워킹</label>
+                        <!-- div.ban_fr>ul.ban_box>li.item$>img.pic+(div.ban_tit_box>h2.ban_tit1+h2.ban_tit2+p.ban_com) -->
+                        <div class="ban_fr">
+                            <ul class="ban_box">
+                                <li class="item1">
+                                    <img src="./images/page2_1.jpg" alt="인성정보" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">01</h2>
+                                        <h2 class="ban_tit2">인성정보</h2>
+                                        <p class="ban_com">IT Business Partner<br>
+                                            Creating the Success Way
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="item2">
+                                    <img src="./images/page2_2.jpg" alt="IT 매니지드 서비스" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">02</h2>
+                                        <h2 class="ban_tit2">IT 매니지드 서비스</h2>
+                                        <p class="ban_com">서버, 스토리지, 네트워크와 가상화까지<br>
+                                            데이터센터에 특화된 IT인프라 서비스를<br> One-Stop으로 제공합니다
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="item3">
+                                    <img src="./images/page2_3.jpg" alt="SD-WAN 서비스" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">03</h2>
+                                        <h2 class="ban_tit2">SD-WAN 서비스</h2>
+                                        <p class="ban_com">Cisco SD-WAN은 MPLS, 인터넷, 4G LTE 등과<br> 같은 다양한 연결에 WAN을 제공하여
+                                            사용자<br> 경험과 민첩성을 크게 향상시켜 줍니다.</p>
+                                    </div>
+                                </li>
+                                <li class="item4">
+                                    <img src="./images/page2_4.jpg" alt="하이브리드 업무환경" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">04</h2>
+                                        <h2 class="ban_tit2">하이브리드 업무환경</h2>
+                                        <p class="ban_com">하이브리드 업무환경 솔루션 '하이브워크'</p>
+                                    </div>
+                                </li>
+                                <li class="item5">
+                                    <img src="./images/page2_5.jpg" alt="데이터센터/클라우드" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">05</h2>
+                                        <h2 class="ban_tit2">데이터센터/클라우드</h2>
+                                        <p class="ban_com">ACI(Application Centric Infrastructure)</p>
+                                    </div>
+                                </li>
+                                <li class="item6">
+                                    <img src="./images/page2_6.jpg" alt="네트워킹" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">06</h2>
+                                        <h2 class="ban_tit2">네트워킹</h2>
+                                        <p class="ban_com">SDA(Software Defined Access)</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
             </section>
             <section class="page" id="page2">
-                <h2 class="page_title">SUSTAINABILITY</h2>
+                <h2 class="page_title" style="display:none">ESG</h2>
                 <div class="page_wrap">
-
+                    <div class="tit_box">
+                        <h3 class="sub_title">ESG</h3>
+                        <h2 class="main_title">SUSTAINABILITY</h2>
+                    </div>
+                    <!-- article.grid_fr>ul.grid_box>li*3>(a.item$>h3.grid_tit+p.grid_com)*2 -->
+                    <article class="grid_fr">
+                        <ul class="grid_box">
+                            <li>
+                                <a href="" class="item1">
+                                    <h3 class="grid_tit">인프라 리더</h3>
+                                    <p class="grid_com">Intelligent Cloud Infrastructure Leader</p>
+                                </a>
+                                <a href="" class="item2">
+                                    <h3 class="grid_tit">주요 활동 및 성과</h3>
+                                    <p class="grid_com">다양한 IT사업분야에 따른 보다 나은 미래</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item3">
+                                    <h3 class="grid_tit">사회공헌</h3>
+                                    <p class="grid_com">지역 사회의 가치 창출을 위한 활동</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item4">
+                                    <h3 class="grid_tit">윤리경영</h3>
+                                    <p class="grid_com">우리 사회의 가치를 높이는 경영</p>
+                                </a>
+                                <a href="" class="item5">
+                                    <h3 class="grid_tit">보고서 및 정책</h3>
+                                    <p class="grid_com">지속가능경영의 발자취</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
             </section>
             <section class="page" id="page3">
-                <h2 class="page_title">INVESTOR RELATIONS</h2>
+                <h2 class="page_title" style="display:none">IR</h2>
                 <div class="page_wrap">
-
+                    <div class="tit_box">
+                        <h3 class="sub_title">IR</h3>
+                        <h2 class="main_title" style="color:#fff">INVESTOR RELATIONS</h2>
+                    </div>
+                    <!-- article.col_fr>ul.col_box>li.left+li.right -->
+                    <article class="col_fr">
+                        <ul class="col_box">
+                            <li class="left">
+                                <p class="one_line"><span class="dot">인성정보</span> <span class="gtxt">A033230</span></p>
+                                <div class="inv_p">
+                                    <p class="large_txt">2,400</p>
+                                    <p class="small_txt">
+                                        <span class="ltxt">2023/04/18 14:59:25</span><br>
+                                        <span class="btxt">─ 0 &nbsp; &nbsp; 0.00%</span>
+                                    </p>
+                                </div>
+                                <dl class="col_dl">
+                                    <dd>
+                                        <h4 class="d_tit">시가</h4>
+                                        <p class="d_com">2,400원</p>
+                                    </dd>
+                                    <dd>
+                                        <h4 class="d_tit">고가</h4>
+                                        <p class="d_com">2,410원</p>
+                                    </dd>
+                                    <dd>
+                                        <h4 class="d_tit">저가</h4>
+                                        <p class="d_com">2,350원</p>
+                                    </dd>
+                                    <dd>
+                                        <h4 class="d_tit">전일가격</h4>
+                                        <p class="d_com">2,400원</p>
+                                    </dd>
+                                    <dd>
+                                        <h4 class="d_tit">거래량</h4>
+                                        <p class="d_com">933,487주</p>
+                                    </dd>
+                                    <dd>
+                                        <h4 class="d_tit">거래대금</h4>
+                                        <p class="d_com">2,331,137,050원</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="right">
+                                <a href="" class="item1"><span>재무제표</span></a>
+                                <a href="" class="item2"><span>공시현황</span></a>
+                                <a href="" class="item3"><span>IR자료실</span></a>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
             </section>
             <section class="page" id="page4">
-                <h2 class="page_title">NOW IS</h2>
+                <h2 class="page_title" style="display:none">PRESS</h2>
                 <div class="page_wrap">
+                    <div class="tit_box">
+                        <h3 class="sub_title">PRESS</h3>
+                        <h2 class="main_title">NOW IS</h2>
+                    </div>
+                    <a href="" class="more">+</a>
+                    <!-- article.board_fr>table.tb1>tbody>tr*5>td.td1+(td.td2>a>h3.td_tit+p.td_com) -->
+                    <article class="board_fr">
+                        <table class="tb1">
+                            <tbody>
+                                <tr>
+                                    <td class="td1">5</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">인성정보, 지난해 역대 최대 매출 달성∙∙∙ 수익성 개선 및 신성장동력 확보 ‘두 마리 토끼’ 잡아</h3>
+                                            <p class="td_com">종합 IT 서비스 기업 인성정보(대표이사 원종윤, 손영삼)는 지난해 연결기준 매출이 전년대비 22% 성장한 3,145억원을 달성했다고 밝혔다. 영업이익은 29억원으로 전년대비 46% 성장했으며, 당기순이익은 9억원으로 흑자를 유지했다</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">4</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">인성정보-Cloud4C, 의료·공공·중견기업 대상 클라우드 사업 협력을 위한 MOU 체결</h3>
+                                            <p class="td_com">운영비용 절감, 관리 효율성 및 보안 최적화 중심의 클라우드 마이그레이션 서비스 협력, 디지털 헬스케어 시장 필두로 공공∙중견기업 공략종합 IT 서비스 기업 인성정보(대표이사 원종윤, 손영삼)가 글로벌 클라우드 관리 서비스 기업 클라우드포씨코리아</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">3</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">인성정보, IT 매니지드 서비스 ‘INSUNG AZit’ 명명∙∙∙ 사업 확장 본격화</h3>
+                                            <p class="td_com">종합 IT 서비스 기업 인성정보(대표이사 원종윤, 손영삼)가 주요 성장동력인 IT 매니지드 서비스를 ‘인성 아지트(INSUNG AZit)’로 명명하고 사업 확장을 본격화한다고 밝혔다.</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">2</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">인성정보 컨소시엄, ‘2024 강원 동계스포츠’ 메타버스 서비스 개발 사업자 선정</h3>
+                                            <p class="td_com">종합 IT 서비스 기업 인성정보(대표이사 원종윤, 손영삼)가 과학기술정보통신부와 한국전파진흥협회(RAPA)가 추진한 '메타버스 플랫폼 개발지원 사업'의 2024 강원 동계스포츠 메타버스 서비스 개발 과제 사업자로 선정되었다고 밝혔다.
 
+                                            </p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">1</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">인성정보, 하이브리드 업무환경 최적화 솔루션 ‘하이브워크’ 출시</h3>
+                                            <p class="td_com">종합 IT 서비스 기업 인성정보(대표이사 원종윤, www.insunginfo.co.kr)는 하이브리드 업무환경 구축을 위한 솔루션 ‘Hyb:Work(이하 하이브워크)’를 출시했다고 밝혔다.</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
                 </div>
             </section>
             <section class="page" id="page5">
-                <h2 class="page_title">고객상담센터</h2>
+                <h2 class="page_title" style="display:none">CS CENTER</h2>
                 <div class="page_wrap">
-
+                    <div class="tit_box">
+                        <h3 class="sub_title">CS CENTER</h3>
+                        <h2 class="main_title">고객상담센터</h2>
+                    </div>
+                    <!-- article.colm_fr>(h3.lst_tit+(ul.lst$*2>li.item$*3>h3.item_tit+a.item_more{상담하기}))*2 -->
+                    <article class="colm_fr">
+                        <h3 class="lst_tit">영업문의</h3>
+                        <ul class="lst1">
+                            <li class="item1">
+                                <h3 class="item_tit">IT 인프라</h3>
+                                <a href="" class="item_more">상담하기</a>
+                            </li>
+                            <li class="item2">
+                                <h3 class="item_tit">기술지원</h3>
+                                <a href="" class="item_more">상담하기</a>
+                            </li>
+                            <li class="item3">
+                                <h3 class="item_tit">협력사 상담</h3>
+                                <a href="" class="item_more">상담하기</a>
+                            </li>
+                        </ul>
+                        <h3 class="lst_tit">벤더문의</h3>
+                        <ul class="lst2">
+                            <li class="item1">
+                                <h3 class="item_tit">Cisco</h3>
+                                <a href="" class="item_more">문의하기</a>
+                            </li>
+                            <li class="item2">
+                                <h3 class="item_tit">Dell Technologies</h3>
+                                <a href="" class="item_more">상담하기</a>
+                            </li>
+                            <li class="item3">
+                                <h3 class="item_tit">HPE ARUBA</h3>
+                                <a href="" class="item_more">보러가기</a>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
             </section>
         </div>
         <footer class="ft">
-
+            <article class=""row row1>
+                <div class="ft_wrap">
+                    <nav class="fnb">
+                        <ul class="fnb_box">
+                            <li><a href="">개인정보처리방침</a></li>
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="">법적고지</a></li>
+                            <li><a href="">이메일 무단수집 거부</a></li>
+                            <li><a href="">온라인 제보</a></li>
+                        </ul>
+                    </nav>
+                    <select name="favo" id="favo" class="favo right" onchange="favo(this)">
+                        <option value="http://www.insunginfo.co.kr/azit/">IT 매니지드 서비스</option>
+                        <option value="http://www.insunginfo.co.kr/sdwan/">SD-WAN 서비스</option>
+                        <option value="http://www.insunginfo.co.kr/hybwork/">하이브리드 업무환경</option>
+                        <option value="http://www.insunginfo.co.kr/calloud/">클라우드 컨택센터</option>
+                        <option value="http://www.insunginfo.co.kr/bbs/content.php?co_id=201_1">데이터센터/클라우드</option>
+                        <option value="http://www.insunginfo.co.kr/bbs/content.php?co_id=202_1">네트워킹</option>
+                    </select>
+                </div>
+                    </select>
+                    <script>
+                    function favo(s){
+                        var hs = s.value;
+                        if(hs!=""){
+                            window.open(hs, "팝업");
+                        }
+                    }    
+                    </script>
+                </div>
+            </article>
+            <article class="row row2">
+                <div class="ft_wrap">
+                    <div class="slogan left">
+                        FOOD<br>
+                        BUSINESS PARTNER<br>
+                        CREATING<br>
+                        THE SUCCESS WAY
+                    </div>
+                    <!-- nav.ft_col2>dl.ft_link.item$*5>dt{솔루션$}+(dd>a)*6 -->
+                    <nav class="ft_link_fr right">
+                        <dl class="ft_link item1">
+                            <dt>기업소개</dt>
+                            <dd><a href="">기업소개</a></dd>
+                            <dd><a href="">CEO</a></dd>
+                            <dd><a href="">IR</a></dd>
+                            <dd><a href="">사업장위치</a></dd>
+                        </dl>
+                        <dl class="ft_link item2">
+                            <dt>사업분야</dt>
+                            <dd><a href="">IT 매니지드 서비스</a></dd>
+                            <dd><a href="">SD-WAN 서비스</a></dd>
+                            <dd><a href="">하이브리드 업무환경</a></dd>
+                            <dd><a href="">클라우드 컨택센터</a></dd>
+                            <dd><a href="">데이터센터/클라우드</a></dd>
+                            <dd><a href="">네트워킹</a></dd>
+                        </dl>
+                        <dl class="ft_link item3">
+                            <dt>NEWS</dt>
+                            <dd><a href="">인성소식</a></dd>
+                            <dd><a href="">보도자료</a></dd>
+                            <dd><a href="">홍보영상</a></dd>
+                            <dd><a href="">공지사항</a></dd>
+                        </dl>
+                        <dl class="ft_link item4">
+                            <dt>투자정보</dt>
+                            <dd><a href="">경영정보</a></dd>
+                            <dd><a href="">주가정보</a></dd>
+                            <dd><a href="">재무정보</a></dd>
+                            <dd><a href="">IR 자료실</a></dd>
+                        </dl>
+                        <dl class="ft_link item5">
+                            <dt>인재채용</dt>
+                            <dd><a href="">인사제도</a></dd>
+                            <dd><a href="">채용정보</a></dd>
+                            <dd><a href="">온라인지원</a></dd>
+                            <dd><a href="">인재 POOL</a></dd>
+                        </dl>
+                    </nav>
+                </div>
+            </article>
+            <article class="row row3">
+                <div class="ft_wrap">
+                    <div class="ft_logo left"></div>
+                    <address class="copyright right">06152 서울 강남구 테헤란로 301 삼정빌딩 8~9층 (주)인성정보   Copyright © 2019 INSUNG INFORMATION CO., LTD. All rights reserved.</address>
+                </div>
+            </article>
         </footer>
+    </div>
+    <div class="fix_area">
+        <a href="#page5" class="cir_box counsel">고객<br>상담센터</a>
+        <a href="#" class="cir_box totop">↑<br>TOP</a>
     </div>
 </body>
 </html>
