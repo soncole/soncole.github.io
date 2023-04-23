@@ -53,7 +53,7 @@ padding-top:6em;  padding-left: 2em; font-size:30px; box-sizing:border-box; }
 background-repeat: no-repeat; border-radius:40px; margin-top: 25px; min-height:300px;
 padding-top:6em;  padding-left: 2em; font-size:30px; box-sizing:border-box; }
 .grid4 .grid_box li .grid_tit { line-height: 1.8; }
-.grid4 .grid_box li .grid_com { font-size:16px; }
+.grid4 .grid_box li .grid_com { font-size:20px; color: #969696; }
 
 
 /* 테이블 */
