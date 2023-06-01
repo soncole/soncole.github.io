@@ -18,8 +18,8 @@
     <meta name="og:site_name" content="사이트이름">
     <meta name="og:title" content="포트폴리오 - 인성정보">
     <meta name="og:description" content="종합 IT 서비스 기업. 헬스케어, 클라우드 기반 인공지능 컨택센터, 매니지드 서비스, 가상화, 네트워크, 서버, 스토리지.">
-    <mata name="og:url" content="https://soncole.github.io/web1">
-    <mata name="og:image" content="./images/thumbnail.jpg">  
+    <meta name="og:url" content="https://soncole.github.io/web1">
+    <meta name="og:image" content="./images/thumbnail.jpg">  
           
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,10 +28,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="sub_common.css">
+    <!-- 오픈그래프 설정 -->
+    <meta name="og:site_name" content="사이트이름">
+    <meta name="og:title" content="포트폴리오 - CJ프레시웨이">
+    <meta name="og:description" content="CJ프레시웨이는 좋은 식자재를 유통하며, 건강하고 맛있는 식문화를 창출하는 대한민국 최고의 글로벌 식자재 유통 및 푸드서비스 전문 기업입니다.">
+    <meta name="og:url" content="https://okgunyang.github.io/web1">
+    <meta name="og:image" content="images/thumbnail.jpg">  
+          
+    <!-- 기본 폰트 및 초기화 로딩 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- 스타일 초기화 -->
+    <!-- reset.css나 normalize.css를 CDN 또는 다운로드 받아 link로 연결 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="main.css">
     <style>
     .vs { height:40vh; }
     .content { background-image: url("./images/subTopBg_03.jpg"); background-position: 0 -100px; }
     #page1 .page_tit { padding-top: 60px; }
+     .table { width:680px; margin:4px auto; padding-top:20px; border-top:2px solid #333; }
+    th {  text-align: justify;  line-height: 0; width:180px; padding-top:10px; padding-bottom: 10px;}
+    td { padding-top:10px; padding-bottom: 10px; }
+    th:after {  content: "";  display: inline-block;  width: 100%; }
+    th:before {  content: "";  display: inline-block;  width: 100%; }
+    .lb { display:block;  font-size:20px; }
+    .indata { display:block; width:400px; height:24px; line-height:24px; padding:10px; }
+    .btn { display:inline-block; outline:none; border:none; border-radius:8px; margin:16px;
+         text-align: center; padding:10px 20px;  cursor:pointer; }
+    .btn-primary { background: -moz-linear-gradient(top, #00b7ea 0%, #009ec3 100%); 
+        background: -webkit-linear-gradient(top, #00b7ea 0%,#009ec3 100%); 
+        background: linear-gradient(to bottom, #00b7ea 0%,#009ec3 100%); color:#fff; }
+    .btn-cancle { background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); 
+        background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); 
+        background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+        color:#fff;
+    }
+    .page_tit { text-align:center; font-size:32px; }
     </style>
 </head>
 <body>
@@ -40,77 +74,81 @@
             <nav class="tnb">
                 <div class="tnb_wrap">
                     <ul class="left_tnb">
+						<li><a href="/admin/index.html">관리자</a></li>
+                        <li><a href="mypage.html">마이페이지</a></li>
+                        <li><a href="logout.html">로그아웃</a></li>
                         <li><a href="login.html">로그인</a></li>
                         <li><a href="agreement.html">회원가입</a></li>
                     </ul>
-                    <ul class="right_tnb">
-                        <li><a href="https://blog.naver.com/insung_info" class="sns1" >A1</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCFWNTNOPK6Ri6CNRsEjNslA" class="sns2">A2</a></li>
-                </div>
-            </nav>
-            <div class="main">
-                <div class="main_wrap">
-                    <a href="" class="logo">
-                        <img src="./images/logo.png" alt="인성정보로고">
-                    </a>
-                    <nav class="gnb">
-                        <ul class="gnb_fr">
-                            <li><a href="sub1.html">기업소개</a>
-                                <div class="sub item1">
-                                    <ul class="dp2">
-                                        <li><a href="sub1.html#page1">기업개요</a></li>
-                                        <li><a href="sub1.html#page2">CEO</a></li>
-                                        <li><a href="sub1.html#page3">IR</a></li>
-                                        <li><a href="sub1.html#page4">사업장위치</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="sub2.html">사업분야</a>
-                                <div class="sub item2">
-                                    <ul class="dp2">
-                                        <li><a href="sub2.html#page1">IT 매니지드 서비스</a></li>
-                                        <li><a href="sub2.html#page2">SD-WAN 서비스</a></li>
-                                        <li><a href="sub2.html#page3">하이브리드 업무환경</a></li>
-                                        <li><a href="sub2.html#page4">클라우드 컨택센터</a></li>
-                                        <li><a href="sub2.html#page5">데이터센터/클라우드</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="sub3.html">NEWS</a>
-                                <div class="sub item3">
-                                    <ul class="dp2">
-                                        <li><a href="sub3.html#page1">인성소식</a></li>
-                                        <li><a href="sub3.html#page2">보도자료</a></li>
-                                        <li><a href="sub3.html#page3">홍보영상</a></li>
-                                        <li><a href="sub3.html#page4">공지사항</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="sub4.html">투자정보</a>
-                                <div class="sub item4">
-                                    <ul class="dp2">
-                                        <li><a href="sub4.html#page1">경영정보</a></li>
-                                        <li><a href="sub4.html#page2">주가정보</a></li>
-                                        <li><a href="sub4.html#page3">재무정보</a></li>
-                                        <li><a href="sub4.html#page4">IR 자료실</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="sub5.html">인재채용</a>
-                                <div class="sub item5">
-                                    <ul class="dp2">
-                                        <li><a href="sub5.html#page1">인사제도</a></li>
-                                        <li><a href="sub5.html#page2">채용정보</a></li>
-                                        <li><a href="sub5.html#page3">온라인지원</a></li>
-                                        <li><a href="sub5.html#page4">인재 POOL</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+	            <ul class="right_tnb">
+	                <li><a href="https://blog.naver.com/insung_info" class="sns1" >A1</a></li>
+	                <li><a href="https://www.youtube.com/channel/UCFWNTNOPK6Ri6CNRsEjNslA" class="sns2">A2</a></li>
+	            </ul>
+	        </div>
+	    </nav>
+	    <div class="main">
+	        <div class="main_wrap">
+	            <a href="index.html" class="logo">
+	                <img src="images/logo.png" alt="인성정보로고">
+	            </a>
+	            <nav class="gnb">
+	                <ul class="gnb_fr">
+	                    <li><a href="intro.html">기업소개</a>
+	                        <div class="sub item1">
+	                            <ul class="dp2">
+	                                <li><a href="intro.html#page1">기업개요</a></li>
+	                                <li><a href="intro.html#page2">CEO</a></li>
+	                                <li><a href="intro.html#page3">IR</a></li>
+	                                <li><a href="intro.html#page4">사업장위치</a></li>
+	                            </ul>
+	                        </div>
+	                    </li>
+	                    <li><a href="business.html">사업분야</a>
+	                        <div class="sub item2">
+	                            <ul class="dp2">
+	                                <li><a href="business.html#page1">IT 매니지드 서비스</a></li>
+	                                <li><a href="business.html#page2">SD-WAN 서비스</a></li>
+	                                <li><a href="business.html#page3">하이브리드 업무환경</a></li>
+	                                <li><a href="business.html#page4">클라우드 컨택센터</a></li>
+	                                <li><a href="business.html#page5">데이터센터/클라우드</a></li>
+	                            </ul>
+	                        </div>
+	                    </li>
+	                    <li><a href="news.html">NEWS</a>
+	                        <div class="sub item3">
+	                            <ul class="dp2">
+	                                <li><a href="news.html#page1">인성소식</a></li>
+	                                <li><a href="news.html#page2">보도자료</a></li>
+	                                <li><a href="news.html#page3">홍보영상</a></li>
+	                                <li><a href="news.html#page4">공지사항</a></li>
+	                            </ul>
+	                        </div>
+	                    </li>
+	                    <li><a href="invest.html">투자정보</a>
+	                        <div class="sub item4">
+	                            <ul class="dp2">
+	                                <li><a href="invest.html#page1">경영정보</a></li>
+	                                <li><a href="invest.html#page2">주가정보</a></li>
+	                                <li><a href="invest.html#page3">재무정보</a></li>
+	                                <li><a href="invest.html#page4">IR 자료실</a></li>
+	                            </ul>
+	                        </div>
+	                    </li>
+	                    <li><a href="career.html">인재채용</a>
+	                        <div class="sub item5">
+	                            <ul class="dp2">
+	                                <li><a href="career.html#page1">인사제도</a></li>
+	                                <li><a href="career.html#page2">채용정보</a></li>
+	                                <li><a href="career.html#page3">온라인지원</a></li>
+	                                <li><a href="career.html#page4">인재 POOL</a></li>
+	                            </ul>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </nav>
+	        </div>
+	    </div>
+	</header>
         <div class="content">
             <figure class="vs">
                 <div class="img_box">
@@ -120,11 +158,29 @@
             <section class="page" id="page1">
                 <h2 class="page_tit">로그인</h2>
                 <div class="page_wrap">
-
+					<form name="login form" action="loginpro.html" method="post">
+						<table class="table" id="tb1">
+							<tbody>
+								<tr>
+									<th><label for="id" class="lb">아이디</label></th>
+									<td><input type="text" name="id" id="id" class="indata" required autofocus></td>
+								</tr>
+								<tr>
+									<th><label for="pw" class="lb">비밀번호</label></th>
+									<td><input type="password" name="pw" id="pw" class="indata" required></td>
+								</tr>
+								<tr>
+									<td colspan="2" style="text-align:center;">
+									<input type="submit" value="로그인" class="btn btn-primary">&nbsp;&nbsp;&nbsp;
+									<input type="reset" value="취소" class="btn">
+								<tr>
+							</tbody>
+						</table>
+					</form>
                 </div>
             </section>
-        </div>
-        <footer class="ft">
+       	</div>
+           <footer class="ft">
             <article class="row row1">
                 <div class="ft_wrap">
                     <nav class="fnb">
@@ -144,6 +200,7 @@
                         <option value="https://www.hicare.co.kr/">하이케어넷(주)</option>
                     </select>
                 </div>
+				<div>
                     <script>
                     function favo(s){
                         var hs = s.value;
@@ -152,7 +209,7 @@
                         }
                     }    
                     </script>
-                </div>
+				</div>
             </article>
             <article class="row row2">
                 <div class="ft_wrap">
@@ -209,11 +266,11 @@
                     <address class="copyright right">06152 서울 강남구 테헤란로 301 삼정빌딩 8~9층 (주)인성정보   Copyright © 2019 INSUNG INFORMATION CO., LTD. All rights reserved.</address>
                 </div>
             </article>
-        </footer>
-    </div>
+		</footer>
     <div class="fix_area">
         <a href="#page5" class="cir_box counsel">고객<br>상담센터</a>
         <a href="#" class="cir_box totop">↑<br>TOP</a>
     </div>
+     </div>
 </body>
 </html>

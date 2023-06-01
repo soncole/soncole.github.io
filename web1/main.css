@@ -112,7 +112,7 @@ padding:38px; }
     .tb1 td a:hover .td_com { color:#075d46;}
 
 
-    #page5 { background-color:#cfd5e3; color:#222; }
+    #page5 { background-color:#cfd5e3; color:#222; padding-bottom: 50px; }
     #page5 .tit_box { clear:both; padding-top: 80px; width: 1280px; margin: 0 auto; }
     .colm_fr { clear:both; width: 1280px; margin:0px auto; }
     .colm_fr .lst_tit { clear:both; padding-top: 30px; font-size:28px; font-weight:100; 
